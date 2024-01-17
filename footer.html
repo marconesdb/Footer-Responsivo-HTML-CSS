@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Responsivo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-logo {
+      margin-right: 20px;
+    }
+
+    .footer-logo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%; /* Se quiser um formato de círculo para a imagem */
+    }
+
+    .footer-text {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="caminho/para/sua/imagem.jpg" alt="Logo do Footer">
+      </div>
+      <div class="footer-text">
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+        <p>Outras informações sobre o seu site ou empresa.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
