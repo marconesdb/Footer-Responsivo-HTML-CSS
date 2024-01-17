@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Footer Responsivo</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .contact, .useful-links, .social-media {
+        flex: 1 1 300px;
+        margin-right: 20px;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    @media (max-width: 768px) {
+        .contact, .useful-links, .social-media {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <footer>
+            <div class="contact">
+                <h2>Contato</h2>
+                <p>Email: contato@seusite.com</p>
+                <p>Telefone: (123) 456-7890</p>
+            </div>
+            
+            <div class="useful-links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
